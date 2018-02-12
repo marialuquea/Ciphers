@@ -275,3 +275,31 @@ function morseDecipher(){
   console.log(output);
 
 }
+
+
+
+
+/*
+#####################################
+#                                   #
+#           BINARY CIPHER           #
+#                                   #
+#####################################
+*/
+
+function binaryCipher() {
+
+  var output = document.getElementById("CipherTextBinary");
+  var input = document.getElementById("PlainTextBinary").value;
+
+  output.value = "";
+
+  for (i=0; i < input.length; i++) {
+    output.value +=input[i].charCodeAt(0).toString(2) + " ";
+  }
+
+}
+
+function binaryDecipher() {
+
+}
