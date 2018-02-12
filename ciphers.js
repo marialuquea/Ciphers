@@ -42,7 +42,7 @@ function caesarShift(){
           if ((letter_code >= 97) && (letter_code <=122)) {
             letter_code = (((letter_code - 97 + amount) % 26) + 97)
           }
-          
+
         letter = String.fromCharCode(letter_code);
       }
       output += letter;
@@ -79,7 +79,16 @@ function caesarDecipher(){
 
         var letter_code = letter.charCodeAt(0);
 
-        letter_code -= amount;
+          //ascii values of uppercase letters
+          if ((letter_code >= 65) && (letter_code <= 90)) {
+            //add amount without going into other ascii characters
+            letter_code = (((letter_code - 90 - amount) % 26) + 90);
+          }
+
+          //ascii values of lowercase letters
+          if ((letter_code >= 97) && (letter_code <=122)) {
+            letter_code = (((letter_code - 122 - amount) % 26) + 122)
+          }
 
         letter = String.fromCharCode(letter_code);
 
