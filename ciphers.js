@@ -8,57 +8,90 @@
 function caesarShift(){
 
   var word = document.getElementById('txtBoxPlainText').value;
-  var amount = parseInt(document.getElementById('amount').value);
+  var amount = document.getElementById('amount').value;
 
-  var output = '';
+  if (amount === ''){
 
-  //Loop through each character
-  for (var i = 0; i < word.length; i++){
+    console.log('enter amount');
+    alert('enter amount');
 
-    var letter = word[i];
+  }
+  else{
 
-    var letter_code = letter.charCodeAt(0);
+    amount = parseInt(amount);
 
-    letter_code += amount;
+    var output = '';
 
-    letter = String.fromCharCode(letter_code);
+    //Loop through each character
+    for (var i = 0; i < word.length; i++){
 
-    output += letter;
+      var letter = word[i];
+
+      if (letter.match(/^[A-Za-z]+$/)){
+
+        var letter_code = letter.charCodeAt(0);
+
+        letter_code += amount;
+
+        letter = String.fromCharCode(letter_code);
+
+      }
+
+      output += letter;
+
+    }
+
+    console.log(output);
+    document.getElementById('txtBoxCipher').innerHTML = output;
 
   }
 
-  console.log(output);
-
-  document.getElementById('txtBoxCipher').innerHTML = output;
 }
 
 
 function caesarDecipher(){
 
   var word = document.getElementById('txtBoxCipher').value;
-  var amount = parseInt(document.getElementById('amount').value);
+  var amount = document.getElementById('amount').value;
 
-  var output = '';
+  if (amount === ''){
 
-  //Loop through each character
-  for (var i = 0; i < word.length; i++){
-
-    var letter = word[i];
-
-    var letter_code = letter.charCodeAt(0);
-
-    letter_code -= amount;
-
-    letter = String.fromCharCode(letter_code);
-
-    output += letter;
+    console.log('enter amount');
+    alert('enter amount');
 
   }
+  else{
 
-  console.log(output);
+    amount = parseInt(amount);
 
-  //WHY DOESN'T THIS WORK?
-  document.getElementById('txtBoxPlainText').innerHTML = output;
+    var output = '';
+
+    //Loop through each character
+    for (var i = 0; i < word.length; i++){
+
+      var letter = word[i];
+
+      if (letter.match(/^[A-Za-z]+$/)){
+
+        var letter_code = letter.charCodeAt(0);
+
+        letter_code -= amount;
+
+        letter = String.fromCharCode(letter_code);
+
+      }
+
+      output += letter;
+
+    }
+
+    console.log(output);
+
+    //WHY DOESN'T THIS WORK?
+    document.getElementById('txtBoxPlainText').innerHTML = output;
+  }
+
+
 }
 
 
