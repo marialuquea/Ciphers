@@ -198,26 +198,80 @@ function morseCipher(){
 
 }
 
-//DOESN'T WORK YET
+
+var alphabet = {
+   "-----":"0",
+   ".----":"1",
+   "..---":"2",
+   "...--":"3",
+   "....-":"4",
+   ".....":"5",
+   "-....":"6",
+   "--...":"7",
+   "---..":"8",
+   "----.":"9",
+
+   ".-":"a",
+   "-...":"b",
+   "-.-.":"c",
+   "-..":"d",
+   ".":"e",
+   "..-.":"f",
+   "--.":"g",
+   "....":"h",
+   "..":"i",
+   ".---":"j",
+   "-.-":"k",
+   ".-..":"l",
+   "--":"m",
+   "-.":"n",
+   "---":"o",
+   ".--.":"p",
+   "--.-":"q",
+   ".-.":"r",
+   "...":"s",
+   "-":"t",
+   "..-":"u",
+   "...-":"v",
+   ".--":"w",
+   "-..-":"x",
+   "-.--":"y",
+   "--..":"z",
+
+   "-.-.-":"!",
+   ".-.-.-":".",
+   "--..--":",",
+   "---...":":",
+   "..--..":"?",
+   ".----.":"'",
+   "-....-":"-",
+   "-..-.":"/",
+   "-.--.-":"(",
+   "-.--.-":")",
+   ".-.-.":"@",
+   "-...-":"=",
+   ".-...":"&",
+   "-.-.-.":";",
+   ".-.-.":"+",
+   "..-.-":"_",
+   "...-..-":"$"
+};
+
+
 function morseDecipher(){
 
-  var word = document.getElementById('CipherTextMorse').value;
-  console.log('1');
+  var text = document.getElementById('CipherTextMorse').value;
 
   var output = '';
-  console.log('2');
 
-  word = word.split(" ");
-
-  for (var i = 0; i < word.length; i++) {
-
-    word[i] = morse[word[i]];
-    output += word[i];
-
-  }
-
-  console.log(output);
+  text.split("     ").map(function (word) {
+    word.split(" ").map(function (letter){
+      output += alphabet[letter];
+    });
+    output += " ";
+  });
 
   document.getElementById('PlainTextMorse').innerHTML = output;
+  console.log(output);
 
 }
