@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="ciphers.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <link rel="stylesheet" href="design.css" type="text/css"/>
+    <title>40280156</title>
+  </head>
+  <body>
+      <header>
+        <br>
+        <h1 id="title">Web Development - Simon Wells</h1>
+        <img src="uni logo.jpg" id="unilogo">
+      </header>
+      <!--HOME PAGE-->
+      <div id="morseimg">
+        <div id="nav">
+          <ul>
+            <!--MAKE CLASS ACTIVE-->
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html#caesarStart">Caesar cipher</a></li>
+            <li><a href="index.html#morseblock">Morse code cipher</a></li>
+            <li><a href="index.html#binaryblock">Binary cipher</a></li>
+            <li><a href="index.html#aboutmetitle">About me</a></li>
+          </ul>
+        </div>
+        <div id="homepage">
+          <h1 id="webdev">CIPHER TRANSLATOR</h1>
+          <h6 id="maria">MARIA LUQUE ANGUITA</h6>
+        </div>
+        <br><br><br><br><br><br><br><br>
+
+      </div>
+
+
+      <!--CAESAR CIPHER-->
+      <div class="redblock" id="caesarStart">
+        <h1 id="caesartitle" >Caesar cipher</h1>
+
+        <div class="left_side">
+
+          <label>Plain text:</label> <br>
+          <textarea class="txtBox" id="txtBoxPlainText" type="text"></textarea>
+          <br><br>
+
+          <label>Letter shifts</label> <br>
+          <input type="text" id="amount" required>
+          <br><br>
+
+          <button class="btnTranslate" type="button" onclick="caesarShift();">Encipher</button>
+          <br><br>
+
+        </div>
+        <div class="right_side">
+          <label id="lblResult">Cipher text:</label><br>
+          <textarea class="txtBox" id="txtBoxCipher"></textarea>
+          <br><br><br><br><br>
+          <button type="button" class="btnTranslate" onclick="caesarDecipher();">Decipher</button>
+        </div>
+
+      </div>
+
+
+      <!--MORSE CIPHER -->
+      <div id="morseblock">
+        <h1 id="morsetitle" >Morse cipher</h1>
+
+        <div class="left_side">
+          <label>Plain text:</label> <br>
+          <textarea class="txtBox" id="PlainTextMorse" type="text"></textarea>
+          <br><br>
+          <button type="button" class="btnTranslate" onclick="morseCipher();">Encipher</button>
+        </div>
+
+        <div class="right_side">
+          <label>Cipher text:</label> <br>
+          <textarea class="txtBox" id="CipherTextMorse" type="text"></textarea>
+          <br><br>
+          <button type="button" class="btnTranslate" onclick="morseDecipher();">Decipher</button>
+        </div>
+
+      </div>
+
+
+
+
+      <!--BINARY CIPHER-->
+      <div id="binaryblock">
+        <h1 id="binarytitle" >Binary Cipher</h1>
+
+        <div class="left_side">
+          <label>Plain text:</label> <br>
+          <textarea class="txtBox" id="PlainTextBinary" type="text"></textarea>
+          <br><br>
+          <button type="button" class="btnTranslate">Encipher</button>
+        </div>
+
+        <div class="right_side">
+          <label>Cipher text:</label> <br>
+          <textarea class="txtBox" id="CipherTextBinary" type="text"></textarea>
+          <br><br>
+          <button type="button" class="btnTranslate">Decipher</button>
+        </div>
+
+      </div>
+
+
+
+
+      <!--ABOUT ME-->
+      <div id="aboutmeblock">
+        <h1 id="aboutmetitle" >About me</h1>
+
+        <div class="left_side">
+          <p>Maria Luque Anguita </p><br>
+          <p>40280156</p><br>
+          <p>BSc Computing Science</p><br>
+          <p>Edinburgh Napier University</p><br>
+        </div>
+
+        <div class="right_side">
+          <img src="maria.jpg" id="mariaphoto">
+        </div>
+
+      </div>
+
+  </body>
+</html>

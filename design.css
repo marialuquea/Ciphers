@@ -1,0 +1,175 @@
+header  {
+  background-color:#fff
+}
+
+#unilogo {
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0
+}
+
+#title {
+  font-family: "Courier New", Courier, monospace;
+  color: #D41E46
+}
+
+/*lightblue bar at the top*/
+#nav{
+  height: 40px;
+  background: lightblue;
+}
+
+#nav ul{
+  padding-top: 13px;
+}
+
+#nav li{
+  list-style: none;
+  float: left;
+  padding-left: 10%;
+  color: black;
+  font-family: 'Actor';
+  font-size: 13px;
+}
+
+#nav .active{
+  font-weight: bold;
+  color: #000;
+}
+
+/*Morse Image background*/
+#morseimg {
+  background-image: url("morse.jpg");
+  min-height: inherit;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+
+#webdev {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 100;
+}
+
+#maria{
+  color: #fff;
+  text-align: center;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.redblock {
+  height: 550px;
+  background-color: #D41E46;
+  position: relative;
+}
+
+#caesartitle {
+  margin-top: 0;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  color:#fff;
+  text-align:center
+}
+
+label{
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 10%;
+}
+
+.txtBox {
+  margin-left: 10%;
+  height: 70px;
+  width: 80%;
+  font-size: 10pt;
+}
+
+#amount {
+  width: 30px;
+  font-size: 10pt;
+  margin-left: 10%
+}
+
+.btnTranslate {
+  margin-left: 10%;
+}
+
+.left_side {
+  float: left;
+  width: 50%;
+}
+
+.right_side {
+  float: right;
+  width: 50%;
+}
+
+#caesar_decipher {
+  margin-left: 10%;
+}
+
+#morseblock {
+  height: 550px;
+  background-color: lightblue;
+  position: relative;
+}
+
+#morsetitle {
+  margin-top: 0;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#binaryblock {
+  height: 550px;
+  background-color: lightpink;
+  position: relative;
+}
+
+#binarytitle {
+  margin-top: 0;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#aboutmeblock {
+  height: 550px;
+  background-color: lightgrey;
+  position: relative;
+}
+
+#aboutmetitle {
+  margin-top: 0;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#mariaphoto {
+  height: 250px;
+  float: center;
+}
+
+p {
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  margin-left: 30%;
+}
