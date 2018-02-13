@@ -48,7 +48,7 @@ function caesarShift(){
       output += letter;
     }
     console.log(output);
-    document.getElementById('txtBoxCipher').innerHTML = output;
+    document.getElementById('txtBoxCipher').value = output;
   }
 }
 
@@ -101,7 +101,7 @@ function caesarDecipher(){
     console.log(output);
 
     //WHY DOESN'T THIS WORK?
-    document.getElementById('txtBoxPlainText').innerHTML = output;
+    document.getElementById('txtBoxPlainText').value = output;
   }
 
 
@@ -194,7 +194,7 @@ function morseCipher(){
 
   console.log(output);
 
-  document.getElementById('CipherTextMorse').innerHTML = output;
+  document.getElementById('CipherTextMorse').value = output;
 
 }
 
@@ -210,6 +210,8 @@ var alphabet = {
    "--...":"7",
    "---..":"8",
    "----.":"9",
+
+   " ":" ",
 
    ".-":"a",
    "-...":"b",
@@ -265,13 +267,18 @@ function morseDecipher(){
   var output = '';
 
   text.split("     ").map(function (word) {
+
     word.split(" ").map(function (letter){
-      output += alphabet[letter];
+
+        output += alphabet[letter];
+
     });
+
     output += " ";
+
   });
 
-  document.getElementById('PlainTextMorse').innerHTML = output;
+  document.getElementById('PlainTextMorse').value = output;
   console.log(output);
 
 }
@@ -289,17 +296,45 @@ function morseDecipher(){
 
 function binaryCipher() {
 
-  var output = document.getElementById("CipherTextBinary");
-  var input = document.getElementById("PlainTextBinary").value;
+  var text = document.getElementById("PlainTextBinary").value;
 
-  output.value = "";
+  var output = '';
 
-  for (i=0; i < input.length; i++) {
-    output.value +=input[i].charCodeAt(0).toString(2) + " ";
+  for (i=0; i < text.length; i++) {
+
+    var code = text[i].charCodeAt(0);
+
+    //toString(2) changes it to binary
+    code = code.toString(2);
+
+    output += code + " ";
+
   }
-
+  document.getElementById('CipherTextBinary').value = output;
+  console.log(output);
 }
 
+
+
+
 function binaryDecipher() {
+
+  var binarytext = document.getElementById('CipherTextBinary').value;
+
+  parseInt(binarytext);
+
+  var output = '';
+
+  binarytext.split(" ").map(function (letter){
+
+    //parses to int from binary
+    var letter_code = parseInt(letter, 2);
+
+    output += String.fromCharCode(letter_code);
+
+  });
+
+  console.log(output);
+  document.getElementById('PlainTextBinary').value = output;
 
 }
