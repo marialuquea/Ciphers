@@ -96,14 +96,25 @@ label{
   font-size: 10pt;
 }
 
+.letter_shifts {
+  text-align: center;
+  margin-left: -10%;
+}
+
 #amount {
   width: 30px;
   font-size: 10pt;
-  margin-left: 10%
 }
 
 .btnTranslate {
   margin-left: 10%;
+}
+
+center {
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  margin: 0 10% 0 10%;
 }
 
 .left_side {
