@@ -1,52 +1,57 @@
 header  {
-  background-color:#fff
+  background-color:#fff;
 }
 
-#unilogo {
-  height: 50px;
-  position: absolute;
-  top: 0;
-  right: 0
+body {
+  margin: 0;
 }
 
 #title {
   font-family: "Courier New", Courier, monospace;
-  color: #D41E46
+  color: #D41E46;
 }
 
-/*lightblue bar at the top*/
+/*lightblue bar*/
 #nav{
-  height: 40px;
+  height: 70px;
   background: lightblue;
 }
 
 #nav ul{
-  padding-top: 13px;
+  padding-top: 15px ;
+  margin: 0;
 }
 
 #nav li{
   list-style: none;
-  float: left;
-  padding-left: 10%;
-  color: black;
-  font-family: 'Actor';
+  padding-left: 7%;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 13px;
+  float: left;
 }
 
-#nav .active{
-  font-weight: bold;
-  color: #000;
+a {
+  background-color: lightblue;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
 }
 
 /*Morse Image background*/
 #morseimg {
   background-image: url("morse.jpg");
-  min-height: inherit;
+  height: 466px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
 
+#homepage {
+  margin-top: 0;
+  padding-top: 80px;
 }
 
 #webdev {
@@ -55,7 +60,7 @@ header  {
   color: #fff;
   font-weight: 100;
 }
-
+/*my picture in About me*/
 #maria{
   color: #fff;
   text-align: center;
