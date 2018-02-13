@@ -39,35 +39,48 @@
       <div class="redblock" id="caesarStart">
         <h1 id="caesartitle" >Caesar cipher</h1>
 
-        <div class="left_side">
+        <center>The Caesar cipher works by replacing each letter with another one corresponding to a certain number of letters up or down in the alphabet.</center>
 
+        <br><br>
+
+        <div class="letter_shifts">
+          <br>
+          <label>Letter shifts</label>
+          <input type="text" id="amount">
+        </div>
+
+        <div class="left_side">
+          <br><br>
           <label>Plain text:</label> <br>
           <textarea class="txtBox" id="txtBoxPlainText" type="text"></textarea>
-          <br><br>
-
-          <label>Letter shifts</label> <br>
-          <input type="text" id="amount" required>
-          <br><br>
+          <br><br><br>
 
           <button class="btnTranslate" type="button" onclick="caesarShift();">Encipher</button>
           <br><br>
-
         </div>
+
         <div class="right_side">
+          <br><br>
           <label id="lblResult">Cipher text:</label><br>
           <textarea class="txtBox" id="txtBoxCipher"></textarea>
-          <br><br><br><br><br>
+          <br><br><br>
           <button type="button" class="btnTranslate" onclick="caesarDecipher();">Decipher</button>
         </div>
 
       </div>
 
 
+
+
       <!--MORSE CIPHER -->
       <div id="morseblock">
         <h1 id="morsetitle" >Morse cipher</h1>
 
+        <Center>Morse code was invented to send messages over long distances by pulses of electricity that would make marks on a moving piece of paper.
+        There are 3 signals: a short dot, a long dash and no signal. A combination of these is used to cipher a message.</center>
+
         <div class="left_side">
+          <br><br>
           <label>Plain text:</label> <br>
           <textarea class="txtBox" id="PlainTextMorse" type="text"></textarea>
           <br><br>
@@ -75,6 +88,7 @@
         </div>
 
         <div class="right_side">
+          <br><br>
           <label>Cipher text with 5 spaces between words:</label> <br>
           <textarea class="txtBox" id="CipherTextMorse" type="text"></textarea>
           <br><br>
@@ -89,6 +103,8 @@
       <!--BINARY CIPHER-->
       <div id="binaryblock">
         <h1 id="binarytitle" >Binary Cipher</h1>
+
+        <center></center>
 
         <div class="left_side">
           <label>Plain text:</label> <br>
@@ -114,10 +130,11 @@
         <h1 id="aboutmetitle" >About me</h1>
 
         <div class="left_side">
-          <p>Maria Luque Anguita </p><br>
-          <p>40280156</p><br>
-          <p>BSc Computing Science</p><br>
-          <p>Edinburgh Napier University</p><br>
+          <p>Maria Luque Anguita </p>
+          <p>40280156</p>
+          <p>BSc Computing Science</p>
+          <p>Edinburgh Napier University</p>
+          <h1>Can I please get 100% in my coursework?</h1>
         </div>
 
         <div class="right_side">
