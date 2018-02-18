@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="ciphers.js"></script>
+    <script src="caesarCipher.js"></script>
+    <script src="caesarDecipher.js"></script>
+    <script src="morseCipher.js"></script>
+    <script src="morseDecipher.js"></script>
+    <script src="morseSounds.js"></script>
+    <script src="binaryCipher.js"></script>
+    <script src="binaryDecipher.js"></script>
+    <script src="atbashCipher.js"></script>
+    <script src="atbashDecipher.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
     <link rel="stylesheet" href="design.css" type="text/css"/>
     <title>40280156</title>
@@ -10,7 +18,7 @@
       <!--HOME PAGE-->
       <div id="morseimg">
         <div id="homepage">
-          <h1 id="webdev">CIPHER TRANSLATOR</h1>
+          <h1 id="ciphers">CIPHER TRANSLATOR</h1>
           <h6 id="maria">MARIA LUQUE ANGUITA</h6>
         </div>
       </div>
@@ -23,6 +31,7 @@
           <li><a href="index.html#caesarStart">Caesar cipher</a></li>
           <li><a href="index.html#morseblock">Morse code cipher</a></li>
           <li><a href="index.html#binaryblock">Binary cipher</a></li>
+          <li><a href="index.html#atbashblock">Atbash cipher</a></li>
           <li><a href="index.html#aboutmetitle">About me</a></li>
         </ul>
       </div>
@@ -86,9 +95,12 @@
           <textarea class="txtBox" id="CipherTextMorse" type="text"></textarea>
           <br><br>
           <button type="button" class="btnTranslate" onclick="morseDecipher();">Decipher</button>
+          <input type="image" id="sound" src="sound.png" onclick="morseSounds();"/>
+          <div id="morseMessage">Produce morse sound</div>
         </div>
 
       </div>
+
 
 
 
@@ -97,7 +109,8 @@
       <div id="binaryblock">
         <h1 id="binarytitle" >Binary Cipher</h1>
 
-        <center></center>
+        <center>Each letter on the alphabet has an ASCII value. That value is translated into binary.</center>
+        <br><br>
 
         <div class="left_side">
           <label>Plain text:</label> <br>
@@ -118,6 +131,35 @@
 
 
 
+
+      <!--ATBASH CIPHER-->
+      <div id="atbashblock">
+        <h1 id="atbashtitle">Atbash Cipher</h1>
+
+        <center>Reverse value in the alphabet of each letter.</center>
+        <br><br>
+
+        <div class="left_side">
+          <label>Plain text:</label> <br>
+          <textarea class="txtBox" id="PlainTextAtbash" type="text"></textarea>
+          <br><br>
+          <button type="button" class="btnTranslate" onclick="atbashCipher();">Encipher</button>
+        </div>
+
+        <div class="right_side">
+          <label>Cipher text:</label> <br>
+          <textarea class="txtBox" id="CipherTextAtbash" type="text"></textarea>
+          <br><br>
+          <button type="button" class="btnTranslate" onclick="atbashDecipher();">Decipher</button>
+        </div>
+
+      </div>
+
+
+
+
+
+
       <!--ABOUT ME-->
       <div id="aboutmeblock">
         <h1 id="aboutmetitle" >About me</h1>
@@ -127,11 +169,22 @@
           <p>40280156</p>
           <p>BSc Computing Science</p>
           <p>Edinburgh Napier University</p>
-          <h1>Can I please get 100% in my coursework?</h1>
         </div>
 
         <div class="right_side">
           <img src="maria.jpg" id="mariaphoto">
+        </div>
+
+        <div class="social_media">
+          <a href="https://www.instagram.com/marialuquea/" target="_blank"><img id="insta" src="instagram.png"></a>
+          <br>
+          <a href="https://www.facebook.com/marialuqueanguita" target="_blank"><img id="fb" src="facebook.png"></a>
+          <br>
+          <a href="https://www.linkedin.com/in/marialuqueanguita" target="_blank"><img id="linkedin" src="linkedin.png"></a>
+        </div>
+
+        <div class="footer">
+          <h6>Copyright &copy Maria Luque Anguita</h6>
         </div>
 
       </div>
