@@ -11,10 +11,42 @@ body {
   color: #D41E46;
 }
 
-/*lightblue bar*/
+/*navigation bar*/
 #nav{
   height: 70px;
-  background: lightblue;
+  background: #BFD8D2;
+}
+
+#nav a {
+  background-color: #BFD8D2;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+#nav a:hover{
+  background-color: #75A8B3;
+  color: white;
+}
+
+.redblock {
+  height: 550px;
+  background-color: #ee8687;
+  position: relative;
+}
+
+#morseblock {
+  height: 550px;
+  background-color: #52658f;
+  position: relative;
+}
+
+#binaryblock {
+  height: 550px;
+  background-color: #89B375;
+  position: relative;
 }
 
 #nav ul{
@@ -24,19 +56,10 @@ body {
 
 #nav li{
   list-style: none;
-  padding-left: 7%;
+  padding-left: 3%;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 13px;
   float: left;
-}
-
-a {
-  background-color: lightblue;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  color: black;
 }
 
 /*Morse Image background*/
@@ -54,12 +77,17 @@ a {
   padding-top: 80px;
 }
 
-#webdev {
+#ciphers {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 70px;
   color: #fff;
   font-weight: 100;
 }
+
+#ciphers:hover{
+  color: #BFD8D2;
+}
+
 /*my picture in About me*/
 #maria{
   color: #fff;
@@ -67,12 +95,6 @@ a {
   font-family: "Century Gothic";
   font-size: 20px;
   font-weight: lighter;
-}
-
-.redblock {
-  height: 550px;
-  background-color: #D41E46;
-  position: relative;
 }
 
 #caesartitle {
@@ -136,24 +158,12 @@ center {
   margin-left: 10%;
 }
 
-#morseblock {
-  height: 550px;
-  background-color: lightblue;
-  position: relative;
-}
-
 #morsetitle {
   margin-top: 0;
   padding-top: 80px;
   text-align: center;
   font-size: 60px;
   font-family: "Courier New", Courier, monospace;
-}
-
-#binaryblock {
-  height: 550px;
-  background-color: lightpink;
-  position: relative;
 }
 
 #binarytitle {
@@ -164,9 +174,23 @@ center {
   font-family: "Courier New", Courier, monospace;
 }
 
+#atbashtitle {
+  margin-top: 0;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+}
+
 #aboutmeblock {
   height: 550px;
   background-color: lightgrey;
+  position: relative;
+}
+
+#atbashblock {
+  height: 550px;
+  background-color: #F19F67;
   position: relative;
 }
 
@@ -188,4 +212,42 @@ p {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   margin-left: 30%;
+}
+
+#sound {
+  width: 20px;
+  padding-left: 20px;
+}
+
+#morseMessage {
+  background-color: white;
+  padding: 3px;
+  width: 140px;
+  display: none;
+  margin-left: 30%;
+  font-family: 'Arial';
+  font-size: 14px;
+  color: #7884B7;
+}
+
+#sound:hover + #morseMessage {
+  display: block;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: grey;
+  height: 50px;
+  width: 180px;
+  vertical-align: middle;
+}
+
+.social_media img {
+  height: 40px;
+  padding-left: 20px;
+  padding-top: 100px;
+  float: left;
 }
