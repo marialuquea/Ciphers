@@ -44,8 +44,6 @@ function caesarDecipher(){
     }
 
     console.log(output);
-
-    //WHY DOESN'T THIS WORK?
     document.getElementById('txtBoxPlainText').value = output;
   }
 
