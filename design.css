@@ -1,65 +1,41 @@
-header  {
-  background-color:#fff;
-}
-
 body {
   margin: 0;
 }
 
-#title {
-  font-family: "Courier New", Courier, monospace;
-  color: #D41E46;
-}
-
-/*navigation bar*/
-#nav{
-  height: 70px;
-  background: #BFD8D2;
-}
-
-#nav a {
-  background-color: #BFD8D2;
-  padding: 14px 25px;
-  text-align: center;
+button {
+  height: 38px;
+  padding: 0 30px;
+  font-size: 15px;
+  line-height: 38px;
+  text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
-  color: black;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #e7e7e7;
+  border: 2px solid #e7e7e7;
+  font-family: 'Courier New';
 }
-
-#nav a:hover{
-  background-color: #75A8B3;
-  color: white;
+button:hover{
+  background-color: Transparent;
 }
+#btnPink, #btnPink1 { color: #ee8687; }
+#btnPink:hover, #btnPink1:hover{ color: white; }
+#btnMorse, #btnMorse1 { color: #52658f; }
+#btnMorse:hover, #btnMorse1:hover{ color: white; }
+#btnBinary, #btnBinary1 { color: #89B375; }
+#btnBinary:hover, #btnBinary1:hover{ color: white; }
+#btnAtbash, #btnAtbash1 { color: #F19F67; }
+#btnAtbash:hover, #btnAtbash1:hover{ color: white; }
 
-.redblock {
-  height: 550px;
-  background-color: #ee8687;
-  position: relative;
+textarea {
+  border-color: #e7e7e7;
+  border-radius: 4px;
+  resize: none;
 }
-
-#morseblock {
-  height: 550px;
-  background-color: #52658f;
-  position: relative;
-}
-
-#binaryblock {
-  height: 550px;
-  background-color: #89B375;
-  position: relative;
-}
-
-#nav ul{
-  padding-top: 15px ;
-  margin: 0;
-}
-
-#nav li{
-  list-style: none;
-  padding-left: 3%;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  font-size: 13px;
-  float: left;
+#amount {
+  border-radius: 4px;
 }
 
 /*Morse Image background*/
@@ -76,38 +52,85 @@ body {
   margin-top: 0;
   padding-top: 80px;
 }
-
-#ciphers {
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  font-size: 70px;
+#mainTitle {
+  font-family: 'Amatic SC';
+  font-size: 100px;
   color: #fff;
+  background-color: #BFD8D2;
   font-weight: 100;
+  text-align:center;
+  -webkit-transition: color 2s, font-size 2s;
+     -moz-transition: color 2s, font-size 2s;
+       -o-transition: color 2s, font-size 2s;
+          transition: color 2s, font-size 2s;
 }
-
-#ciphers:hover{
-  color: #BFD8D2;
-}
-
-/*my picture in About me*/
-#maria{
+#author{
   color: #fff;
   text-align: center;
-  font-family: "Century Gothic";
-  font-size: 20px;
+  font-family: "Amatic SC";
+  font-size: 30px;
   font-weight: lighter;
 }
 
-#caesartitle {
+
+/*************
+Navigation Bar
+*************/
+#nav{
+  height: 70px;
+  background: #BFD8D2;
+}
+#nav ul{
+  margin: 0;
+  list-style: none;
+}
+#nav li{
+  font-family: 'Amatic SC';
+  font-size: 25px;
+  float: left;
+}
+#nav a {
+  padding: 14px 40px;
+  text-decoration: none;
+  display: inline-block;
+  color: grey;
+  margin: 5px 0 5px 0;
+}
+#nav a:hover{
+  background-color: #75A8B3;
+  color: white;
+}
+
+/*************
+COLOUR BLOCKS
+*************/
+.block {
+  height: 550px;
+  position: relative;
+}
+#caesarblock {
+  background-color: #ee8687;
+}
+#morseblock {
+  background-color: #52658f;
+}
+#binaryblock {
+  background-color: #89B375;
+}
+#atbashblock {
+  background-color: #F19F67;
+}
+#aboutmeblock {
+  background-color: lightgrey;
+}
+
+.sectionTitle {
   margin-top: 0;
   padding-top: 80px;
   text-align: center;
   font-size: 60px;
   font-family: "Courier New", Courier, monospace;
-}
-
-h1 {
   color:#fff;
-  text-align:center
 }
 
 label{
@@ -122,22 +145,22 @@ label{
   width: 80%;
   font-size: 10pt;
 }
+.btnTranslate {
+  margin-left: 10%;
+}
 
+
+/*Caesar shifts*/
 .letter_shifts {
   text-align: center;
   margin-left: -10%;
 }
-
 #amount {
   width: 30px;
   font-size: 10pt;
 }
 
-.btnTranslate {
-  margin-left: 10%;
-}
-
-center {
+center {   /*text explaining cipher*/
   color: #fff;
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
@@ -148,70 +171,9 @@ center {
   float: left;
   width: 50%;
 }
-
 .right_side {
   float: right;
   width: 50%;
-}
-
-#caesar_decipher {
-  margin-left: 10%;
-}
-
-#morsetitle {
-  margin-top: 0;
-  padding-top: 80px;
-  text-align: center;
-  font-size: 60px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-#binarytitle {
-  margin-top: 0;
-  padding-top: 80px;
-  text-align: center;
-  font-size: 60px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-#atbashtitle {
-  margin-top: 0;
-  padding-top: 80px;
-  text-align: center;
-  font-size: 60px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-#aboutmeblock {
-  height: 550px;
-  background-color: lightgrey;
-  position: relative;
-}
-
-#atbashblock {
-  height: 550px;
-  background-color: #F19F67;
-  position: relative;
-}
-
-#aboutmetitle {
-  margin-top: 0;
-  padding-top: 80px;
-  text-align: center;
-  font-size: 60px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-#mariaphoto {
-  height: 250px;
-  float: center;
-}
-
-p {
-  color: #fff;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
-  margin-left: 30%;
 }
 
 #sound {
@@ -220,34 +182,46 @@ p {
 }
 
 #morseMessage {
-  background-color: white;
   padding: 3px;
-  width: 140px;
   display: none;
   margin-left: 30%;
-  font-family: 'Arial';
+  font-family: 'Courier New';
   font-size: 14px;
-  color: #7884B7;
+  color: white;
 }
-
 #sound:hover + #morseMessage {
   display: block;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: white;
-  background-color: grey;
-  height: 50px;
-  width: 180px;
-  vertical-align: middle;
+.social_media {
+  margin: 0 60px 0 60px;
+  text-align: center;
+}
+.social_media img {
+  width: 20%;
+  display: inline-block;
+  margin: 0 1% 0 1%;
 }
 
-.social_media img {
-  height: 40px;
-  padding-left: 20px;
-  padding-top: 100px;
-  float: left;
+
+/*Picture of me at the end*/
+#mariaphoto {
+  height: 220px;
+}
+
+p { /*text about me*/
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  margin-left: 30%;
+  padding: 10px;
+}
+
+.footer {
+  overflow: hidden;
+  position: absolute;
+  bottom: 20px;
+  color: grey;
+  width: 100%;
+  text-align: center;
 }

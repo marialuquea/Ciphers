@@ -11,6 +11,7 @@
     <script src="atbashCipher.js"></script>
     <script src="atbashDecipher.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
     <link rel="stylesheet" href="design.css" type="text/css"/>
     <title>40280156</title>
   </head>
@@ -18,8 +19,8 @@
       <!--HOME PAGE-->
       <div id="morseimg">
         <div id="homepage">
-          <h1 id="ciphers">CIPHER TRANSLATOR</h1>
-          <h6 id="maria">MARIA LUQUE ANGUITA</h6>
+          <h1 id="mainTitle">CIPHER TRANSLATOR</h1>
+          <h6 id="author">MARIA LUQUE ANGUITA</h6>
         </div>
       </div>
 
@@ -27,19 +28,18 @@
       <div id="nav">
         <ul>
           <!--MAKE CLASS ACTIVE-->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#caesarStart">Caesar cipher</a></li>
+          <li><a href="index.html#caesarblock">Caesar cipher</a></li>
           <li><a href="index.html#morseblock">Morse code cipher</a></li>
           <li><a href="index.html#binaryblock">Binary cipher</a></li>
           <li><a href="index.html#atbashblock">Atbash cipher</a></li>
-          <li><a href="index.html#aboutmetitle">About me</a></li>
+          <li><a href="index.html#aboutmeblock">Follow me</a></li>
         </ul>
       </div>
 
 
       <!--CAESAR CIPHER-->
-      <div class="redblock" id="caesarStart">
-        <h1 id="caesartitle" >Caesar cipher</h1>
+      <div id="caesarblock" class="block">
+        <h1 class="sectionTitle">Caesar cipher</h1>
 
         <center>The Caesar cipher works by replacing each letter with another one corresponding to a certain number of letters up or down in the alphabet.</center>
 
@@ -55,9 +55,8 @@
           <br><br>
           <label>Plain text:</label> <br>
           <textarea class="txtBox" id="txtBoxPlainText" type="text"></textarea>
-          <br><br><br>
-
-          <button class="btnTranslate" type="button" onclick="caesarShift();">Encipher</button>
+          <br><br>
+          <button id="btnPink" class="btnTranslate" type="button" onclick="caesarShift();">Encipher</button>
           <br><br>
         </div>
 
@@ -65,8 +64,8 @@
           <br><br>
           <label id="lblResult">Cipher text:</label><br>
           <textarea class="txtBox" id="txtBoxCipher"></textarea>
-          <br><br><br>
-          <button type="button" class="btnTranslate" onclick="caesarDecipher();">Decipher</button>
+          <br><br>
+          <button id="btnPink1" type="button" class="btnTranslate" onclick="caesarDecipher();">Decipher</button>
         </div>
 
       </div>
@@ -75,8 +74,8 @@
 
 
       <!--MORSE CIPHER -->
-      <div id="morseblock">
-        <h1 id="morsetitle" >Morse cipher</h1>
+      <div id="morseblock" class="block">
+        <h1 class="sectionTitle">Morse cipher</h1>
 
         <Center>Morse code was invented to send messages over long distances by pulses of electricity that would make marks on a moving piece of paper.
         There are 3 signals: a short dot, a long dash and no signal. A combination of these is used to cipher a message.</center>
@@ -86,7 +85,7 @@
           <label>Plain text:</label> <br>
           <textarea class="txtBox" id="PlainTextMorse" type="text"></textarea>
           <br><br>
-          <button type="button" class="btnTranslate" onclick="morseCipher();">Encipher</button>
+          <button id="btnMorse" type="button" class="btnTranslate" onclick="morseCipher();">Encipher</button>
         </div>
 
         <div class="right_side">
@@ -94,7 +93,7 @@
           <label>Cipher text with 5 spaces between words:</label> <br>
           <textarea class="txtBox" id="CipherTextMorse" type="text"></textarea>
           <br><br>
-          <button type="button" class="btnTranslate" onclick="morseDecipher();">Decipher</button>
+          <button id="btnMorse1" type="button" class="btnTranslate" onclick="morseDecipher();">Decipher</button>
           <input type="image" id="sound" src="sound.png" onclick="morseSounds();"/>
           <div id="morseMessage">Produce morse sound</div>
         </div>
@@ -106,8 +105,8 @@
 
 
       <!--BINARY CIPHER-->
-      <div id="binaryblock">
-        <h1 id="binarytitle" >Binary Cipher</h1>
+      <div id="binaryblock" class="block">
+        <h1 class="sectionTitle">Binary Cipher</h1>
 
         <center>Each letter on the alphabet has an ASCII value. That value is translated into binary.</center>
         <br><br>
@@ -116,14 +115,14 @@
           <label>Plain text:</label> <br>
           <textarea class="txtBox" id="PlainTextBinary" type="text"></textarea>
           <br><br>
-          <button type="button" class="btnTranslate" onclick="binaryCipher();">Encipher</button>
+          <button id="btnBinary"type="button" class="btnTranslate" onclick="binaryCipher();">Encipher</button>
         </div>
 
         <div class="right_side">
           <label>Cipher text:</label> <br>
           <textarea class="txtBox" id="CipherTextBinary" type="text"></textarea>
           <br><br>
-          <button type="button" class="btnTranslate" onclick="binaryDecipher();">Decipher</button>
+          <button id="btnBinary1" type="button" class="btnTranslate" onclick="binaryDecipher();">Decipher</button>
         </div>
 
       </div>
@@ -133,8 +132,8 @@
 
 
       <!--ATBASH CIPHER-->
-      <div id="atbashblock">
-        <h1 id="atbashtitle">Atbash Cipher</h1>
+      <div id="atbashblock" class="block">
+        <h1 class="sectionTitle">Atbash Cipher</h1>
 
         <center>Reverse value in the alphabet of each letter.</center>
         <br><br>
@@ -143,14 +142,14 @@
           <label>Plain text:</label> <br>
           <textarea class="txtBox" id="PlainTextAtbash" type="text"></textarea>
           <br><br>
-          <button type="button" class="btnTranslate" onclick="atbashCipher();">Encipher</button>
+          <button id="btnAtbash"type="button" class="btnTranslate" onclick="atbashCipher();">Encipher</button>
         </div>
 
         <div class="right_side">
           <label>Cipher text:</label> <br>
           <textarea class="txtBox" id="CipherTextAtbash" type="text"></textarea>
           <br><br>
-          <button type="button" class="btnTranslate" onclick="atbashDecipher();">Decipher</button>
+          <button id="btnAtbash1"type="button" class="btnTranslate" onclick="atbashDecipher();">Decipher</button>
         </div>
 
       </div>
@@ -161,26 +160,13 @@
 
 
       <!--ABOUT ME-->
-      <div id="aboutmeblock">
-        <h1 id="aboutmetitle" >About me</h1>
-
-        <div class="left_side">
-          <p>Maria Luque Anguita </p>
-          <p>40280156</p>
-          <p>BSc Computing Science</p>
-          <p>Edinburgh Napier University</p>
-        </div>
-
-        <div class="right_side">
-          <img src="maria.jpg" id="mariaphoto">
-        </div>
+      <div id="aboutmeblock" class="block">
+        <h1 class="sectionTitle">Follow me</h1>
 
         <div class="social_media">
-          <a href="https://www.instagram.com/marialuquea/" target="_blank"><img id="insta" src="instagram.png"></a>
-          <br>
-          <a href="https://www.facebook.com/marialuqueanguita" target="_blank"><img id="fb" src="facebook.png"></a>
-          <br>
-          <a href="https://www.linkedin.com/in/marialuqueanguita" target="_blank"><img id="linkedin" src="linkedin.png"></a>
+          <a href="https://www.facebook.com/marialuqueanguita" target="_blank"><img id="fb" src="facebook2.png"></a>
+          <a href="https://www.instagram.com/marialuquea/" target="_blank"><img id="insta" src="insta.png"></a>
+          <a href="https://www.linkedin.com/in/marialuqueanguita" target="_blank"><img id="linkedin" src="linkedin2.png"></a>
         </div>
 
         <div class="footer">
