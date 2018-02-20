@@ -10,6 +10,8 @@
     <script src="binaryDecipher.js"></script>
     <script src="atbashCipher.js"></script>
     <script src="atbashDecipher.js"></script>
+    <script src="copy.js"></script>
+    <script src="smoothTrans.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
     <link rel="stylesheet" href="design.css" type="text/css"/>
@@ -28,11 +30,11 @@
       <div id="nav">
         <ul>
           <!--MAKE CLASS ACTIVE-->
-          <li><a href="index.html#caesarblock">Caesar cipher</a></li>
-          <li><a href="index.html#morseblock">Morse code cipher</a></li>
-          <li><a href="index.html#binaryblock">Binary cipher</a></li>
-          <li><a href="index.html#atbashblock">Atbash cipher</a></li>
-          <li><a href="index.html#aboutmeblock">Follow me</a></li>
+          <li><a onclick="slowMove(document.getElementById('caesarblock'))">Caesar cipher</a></li>
+          <li><a onclick="slowMove(document.getElementById('morseblock'))">Morse code cipher</a></li>
+          <li><a onclick="slowMove(document.getElementById('binaryblock'))">Binary cipher</a></li>
+          <li><a onclick="slowMove(document.getElementById('atbashblock'))">Atbash cipher</a></li>
+          <li><a onclick="slowMove(document.getElementById('aboutmeblock'))">Follow me</a></li>
         </ul>
       </div>
 
