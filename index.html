@@ -58,7 +58,8 @@
           <textarea id="txtBoxPlainText" type="text"></textarea>
           <br><br>
           <button id="btnPink"    type="button" onclick="caesarShift();">Encipher</button>
-          <br><br>
+          <input type="image" class="voice" src="copy2.png" onclick="copyMessage('txtBoxPlainText');">
+          <input type="image" id="sound" src="speaker.png"/>
         </div>
 
         <div class="right_side">
@@ -67,6 +68,8 @@
           <textarea id="txtBoxCipher"></textarea>
           <br><br>
           <button id="btnPink1" type="button" onclick="caesarDecipher();">Decipher</button>
+          <input type="image" class="voice" src="copy2.png" onclick="copyMessage('txtBoxCipher');">
+          <input type="image" id="sound" src="speaker.png"/>
         </div>
 
       </div>
@@ -87,6 +90,8 @@
           <textarea id="PlainTextMorse" type="text"></textarea>
           <br><br>
           <button id="btnMorse" type="button" onclick="morseCipher();">Encipher</button>
+          <input type="image" class="voice" src="copy2.png" onclick="copyMessage('PlainTextMorse');">
+          <input type="image" id="sound" src="speaker.png"/>
         </div>
 
         <div class="right_side">
@@ -95,7 +100,8 @@
           <textarea id="CipherTextMorse" type="text"></textarea>
           <br><br>
           <button id="btnMorse1" type="button" onclick="morseDecipher();">Decipher</button>
-          <input type="image" id="sound" src="sound.png" onclick="morseSounds();"/>
+          <input type="image" class="voice" src="copy2.png" onclick="copyMessage('CipherTextMorse');">
+          <input type="image" id="sound" src="speaker.png" onclick="morseSounds();"/>
           <div id="morseMessage">Produce morse sound</div>
         </div>
 
@@ -117,6 +123,8 @@
           <textarea id="PlainTextBinary" type="text"></textarea>
           <br><br>
           <button id="btnBinary"type="button" onclick="binaryCipher();">Encipher</button>
+          <input type="image" class="voice" src="copy2.png" onclick="copyMessage('PlainTextBinary');">
+          <input type="image" id="sound" src="speaker.png"/>
         </div>
 
         <div class="right_side">
@@ -124,6 +132,8 @@
           <textarea id="CipherTextBinary" type="text"></textarea>
           <br><br>
           <button id="btnBinary1" type="button" onclick="binaryDecipher();">Decipher</button>
+          <input type="image" class="voice" src="copy2.png" onclick="copyMessage('CipherTextBinary');">
+          <input type="image" id="sound" src="speaker.png"/>
         </div>
 
       </div>
@@ -144,6 +154,8 @@
           <textarea id="PlainTextAtbash" type="text"></textarea>
           <br><br>
           <button id="btnAtbash"type="button" onclick="atbashCipher();">Encipher</button>
+          <input type="image" class="voice" src="copy2.png" onclick="copyMessage('PlainTextAtbash');">
+          <input type="image" id="sound" src="speaker.png"/>
         </div>
 
         <div class="right_side">
@@ -151,6 +163,8 @@
           <textarea id="CipherTextAtbash" type="text"></textarea>
           <br><br>
           <button id="btnAtbash1"type="button" onclick="atbashDecipher();">Decipher</button>
+          <input type="image" class="voice" src="copy2.png" onclick="copyMessage('CipherTextAtbash');">
+          <input type="image" id="sound" src="speaker.png"/>
         </div>
 
       </div>

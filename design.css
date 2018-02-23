@@ -165,6 +165,12 @@ COLOUR BLOCKS
   background-color: lightgrey;
 }
 
+
+.voice {
+  width: 20px;
+  margin-left: 5%;
+}
+
 #sound {
   width: 20px;
   padding-left: 20px;
