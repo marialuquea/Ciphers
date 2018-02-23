@@ -4,21 +4,13 @@ function atbashDecipher() {
 
   var output = '';
 
-    if (amount === ''){
-
-      console.log('enter amount');
-      alert('enter amount');
-
-    }
-    else{
-
       for (var i = 0; i < text.length; i++) {
 
         var letter = text[i];
-        var diff;
+        var diff; //difference
         var new_letter; //code of new letter
 
-        if (letter.match(/^[A-Za-z]+$/)) {
+        if (letter.match(/^[A-Za-z]+$/)) { 
 
           var letter_code = letter.charCodeAt(0);
 
@@ -39,5 +31,5 @@ function atbashDecipher() {
       }
       console.log(output);
       document.getElementById('PlainTextAtbash').value = output;
-    }
+
 }

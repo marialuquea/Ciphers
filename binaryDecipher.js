@@ -6,6 +6,9 @@ function binaryDecipher() {
 
   var output = '';
 
+  //split text in every space
+  //every space is a letter
+  //to each letter apply this function
   binarytext.split(" ").map(function (letter){
 
     //parses to int from binary

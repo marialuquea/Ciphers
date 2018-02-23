@@ -35,7 +35,7 @@ function caesarShift(){
           if ((letter_code >= 97) && (letter_code <=122)) {
             letter_code = (((letter_code - 97 + amount) % 26) + 97)
           }
-
+          
         letter = String.fromCharCode(letter_code);
       }
       output += letter;

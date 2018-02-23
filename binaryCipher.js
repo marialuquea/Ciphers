@@ -8,7 +8,7 @@ function binaryCipher() {
 
     var code = text[i].charCodeAt(0);
 
-    //toString(2) changes it to binary
+    //toString(2) changes the number to binary
     code = code.toString(2);
 
     output += code + " ";

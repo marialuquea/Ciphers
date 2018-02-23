@@ -2,9 +2,7 @@ window.slowMove = function(target) {
 
     var destination = target;
 
-    /**********************************************
-    This part moves the window by 1 pixel each time
-    **********************************************/
+    //moves window by 1 pixel each time
     do { //find scroll container
       //parentNode finds the node name of the parent node of the destination
       //finds where the destination is located
@@ -18,12 +16,9 @@ window.slowMove = function(target) {
     } while (destination.scrollTop == 0);
 
 
-    /**********************************************
-    This part calls the above function until it
-    gets to the destination.
-    **********************************************/
     var distance_in_pixels = 0;
 
+    //calls above function until it gets to destination.
     do { //find the top of target relatively to the container
         distance_in_pixels += target.offsetTop;
         //offsetTop returns a number, representing the top position of the element, in pixels
@@ -38,7 +33,7 @@ window.slowMove = function(target) {
           console.log(to); //this is a directory
           console.log(move1); //by how many pixels it moves each move
           console.log(top_div); //pixels from the top to destination
-          console.log(i); //always 21 as it stops there
+          console.log(i); 
           return;
         }
 

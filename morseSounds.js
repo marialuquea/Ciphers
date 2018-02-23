@@ -1,4 +1,3 @@
-
 var context = null;
 
 function playSound(start, stop){

@@ -4,7 +4,9 @@ function morseCipher(){
 
   var output = '';
 
+  //split each letter and put it in an array
   word = word.toLowerCase().split("");
+  console.log(word);
 
   for (var i = 0; i < word.length; i++) {
 
