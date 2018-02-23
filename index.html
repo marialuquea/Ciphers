@@ -11,6 +11,7 @@
     <script src="atbashCipher.js"></script>
     <script src="atbashDecipher.js"></script>
     <script src="copy.js"></script>
+    <script src="readMessage.js"></script>
     <script src="smoothTrans.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
@@ -59,7 +60,7 @@
           <br><br>
           <button id="btnPink"    type="button" onclick="caesarShift();">Encipher</button>
           <input type="image" class="voice" src="copy2.png" onclick="copyMessage('txtBoxPlainText');">
-          <input type="image" id="sound" src="speaker.png"/>
+          <input type="image" id="sound" src="speaker.png" onclick="readMessage('txtBoxPlainText');"/>
         </div>
 
         <div class="right_side">
@@ -69,7 +70,7 @@
           <br><br>
           <button id="btnPink1" type="button" onclick="caesarDecipher();">Decipher</button>
           <input type="image" class="voice" src="copy2.png" onclick="copyMessage('txtBoxCipher');">
-          <input type="image" id="sound" src="speaker.png"/>
+          <input type="image" id="sound" src="speaker.png" onclick="readMessage('txtBoxCipher');"/>
         </div>
 
       </div>
@@ -91,7 +92,7 @@
           <br><br>
           <button id="btnMorse" type="button" onclick="morseCipher();">Encipher</button>
           <input type="image" class="voice" src="copy2.png" onclick="copyMessage('PlainTextMorse');">
-          <input type="image" id="sound" src="speaker.png"/>
+          <input type="image" id="sound" src="speaker.png" onclick="readMessage('PlainTextMorse');"/>
         </div>
 
         <div class="right_side">
@@ -124,7 +125,7 @@
           <br><br>
           <button id="btnBinary"type="button" onclick="binaryCipher();">Encipher</button>
           <input type="image" class="voice" src="copy2.png" onclick="copyMessage('PlainTextBinary');">
-          <input type="image" id="sound" src="speaker.png"/>
+          <input type="image" id="sound" src="speaker.png"  onclick="readMessage('PlainTextBinary');"/>
         </div>
 
         <div class="right_side">
@@ -133,7 +134,7 @@
           <br><br>
           <button id="btnBinary1" type="button" onclick="binaryDecipher();">Decipher</button>
           <input type="image" class="voice" src="copy2.png" onclick="copyMessage('CipherTextBinary');">
-          <input type="image" id="sound" src="speaker.png"/>
+          <input type="image" id="sound" src="speaker.png" onclick="readMessage('CipherTextBinary');"/>
         </div>
 
       </div>
@@ -155,7 +156,7 @@
           <br><br>
           <button id="btnAtbash"type="button" onclick="atbashCipher();">Encipher</button>
           <input type="image" class="voice" src="copy2.png" onclick="copyMessage('PlainTextAtbash');">
-          <input type="image" id="sound" src="speaker.png"/>
+          <input type="image" id="sound" src="speaker.png" onclick="readMessage('PlainTextAtbash');"/>
         </div>
 
         <div class="right_side">
@@ -164,7 +165,7 @@
           <br><br>
           <button id="btnAtbash1"type="button" onclick="atbashDecipher();">Decipher</button>
           <input type="image" class="voice" src="copy2.png" onclick="copyMessage('CipherTextAtbash');">
-          <input type="image" id="sound" src="speaker.png"/>
+          <input type="image" id="sound" src="speaker.png" onclick="readMessage('CipherTextAtbash');"/>
         </div>
 
       </div>
