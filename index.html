@@ -29,7 +29,6 @@
       <!--NAVIGATION-->
       <div id="nav">
         <ul>
-          <!--MAKE CLASS ACTIVE-->
           <li><a onclick="slowMove(document.getElementById('caesarblock'))">Caesar cipher</a></li>
           <li><a onclick="slowMove(document.getElementById('morseblock'))">Morse code cipher</a></li>
           <li><a onclick="slowMove(document.getElementById('binaryblock'))">Binary cipher</a></li>
@@ -56,18 +55,18 @@
         <div class="left_side">
           <br><br>
           <label>Plain text:</label> <br>
-          <textarea class="txtBox" id="txtBoxPlainText" type="text"></textarea>
+          <textarea id="txtBoxPlainText" type="text"></textarea>
           <br><br>
-          <button id="btnPink" class="btnTranslate" type="button" onclick="caesarShift();">Encipher</button>
+          <button id="btnPink"    type="button" onclick="caesarShift();">Encipher</button>
           <br><br>
         </div>
 
         <div class="right_side">
           <br><br>
           <label id="lblResult">Cipher text:</label><br>
-          <textarea class="txtBox" id="txtBoxCipher"></textarea>
+          <textarea id="txtBoxCipher"></textarea>
           <br><br>
-          <button id="btnPink1" type="button" class="btnTranslate" onclick="caesarDecipher();">Decipher</button>
+          <button id="btnPink1" type="button" onclick="caesarDecipher();">Decipher</button>
         </div>
 
       </div>
@@ -85,17 +84,17 @@
         <div class="left_side">
           <br><br>
           <label>Plain text:</label> <br>
-          <textarea class="txtBox" id="PlainTextMorse" type="text"></textarea>
+          <textarea id="PlainTextMorse" type="text"></textarea>
           <br><br>
-          <button id="btnMorse" type="button" class="btnTranslate" onclick="morseCipher();">Encipher</button>
+          <button id="btnMorse" type="button" onclick="morseCipher();">Encipher</button>
         </div>
 
         <div class="right_side">
           <br><br>
           <label>Cipher text with 5 spaces between words:</label> <br>
-          <textarea class="txtBox" id="CipherTextMorse" type="text"></textarea>
+          <textarea id="CipherTextMorse" type="text"></textarea>
           <br><br>
-          <button id="btnMorse1" type="button" class="btnTranslate" onclick="morseDecipher();">Decipher</button>
+          <button id="btnMorse1" type="button" onclick="morseDecipher();">Decipher</button>
           <input type="image" id="sound" src="sound.png" onclick="morseSounds();"/>
           <div id="morseMessage">Produce morse sound</div>
         </div>
@@ -115,16 +114,16 @@
 
         <div class="left_side">
           <label>Plain text:</label> <br>
-          <textarea class="txtBox" id="PlainTextBinary" type="text"></textarea>
+          <textarea id="PlainTextBinary" type="text"></textarea>
           <br><br>
-          <button id="btnBinary"type="button" class="btnTranslate" onclick="binaryCipher();">Encipher</button>
+          <button id="btnBinary"type="button" onclick="binaryCipher();">Encipher</button>
         </div>
 
         <div class="right_side">
           <label>Cipher text:</label> <br>
-          <textarea class="txtBox" id="CipherTextBinary" type="text"></textarea>
+          <textarea id="CipherTextBinary" type="text"></textarea>
           <br><br>
-          <button id="btnBinary1" type="button" class="btnTranslate" onclick="binaryDecipher();">Decipher</button>
+          <button id="btnBinary1" type="button" onclick="binaryDecipher();">Decipher</button>
         </div>
 
       </div>
@@ -142,16 +141,16 @@
 
         <div class="left_side">
           <label>Plain text:</label> <br>
-          <textarea class="txtBox" id="PlainTextAtbash" type="text"></textarea>
+          <textarea id="PlainTextAtbash" type="text"></textarea>
           <br><br>
-          <button id="btnAtbash"type="button" class="btnTranslate" onclick="atbashCipher();">Encipher</button>
+          <button id="btnAtbash"type="button" onclick="atbashCipher();">Encipher</button>
         </div>
 
         <div class="right_side">
           <label>Cipher text:</label> <br>
-          <textarea class="txtBox" id="CipherTextAtbash" type="text"></textarea>
+          <textarea id="CipherTextAtbash" type="text"></textarea>
           <br><br>
-          <button id="btnAtbash1"type="button" class="btnTranslate" onclick="atbashDecipher();">Decipher</button>
+          <button id="btnAtbash1"type="button" onclick="atbashDecipher();">Decipher</button>
         </div>
 
       </div>

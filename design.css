@@ -2,7 +2,32 @@ body {
   margin: 0;
 }
 
-button {
+/*************
+Common things
+*************/
+.sectionTitle { /*All titles*/
+  margin-top: 0;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+  color:#fff;
+}
+label{ /*All labels*/
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 10%;
+}
+textarea { /*All textareas*/
+  border-color: #e7e7e7;
+  border-radius: 4px;
+  resize: none;
+  margin-left: 10%;
+  height: 70px;
+  width: 80%;
+  font-size: 10pt;
+}
+button { /*All buttons, encipher and decipher*/
   height: 38px;
   padding: 0 30px;
   font-size: 15px;
@@ -16,10 +41,9 @@ button {
   background-color: #e7e7e7;
   border: 2px solid #e7e7e7;
   font-family: 'Courier New';
+  margin-left: 10%;
 }
-button:hover{
-  background-color: Transparent;
-}
+button:hover{ background-color: Transparent; }
 #btnPink, #btnPink1 { color: #ee8687; }
 #btnPink:hover, #btnPink1:hover{ color: white; }
 #btnMorse, #btnMorse1 { color: #52658f; }
@@ -29,15 +53,34 @@ button:hover{
 #btnAtbash, #btnAtbash1 { color: #F19F67; }
 #btnAtbash:hover, #btnAtbash1:hover{ color: white; }
 
-textarea {
-  border-color: #e7e7e7;
-  border-radius: 4px;
-  resize: none;
+.letter_shifts { /*Caesar shifts textbox*/
+  text-align: center;
+  margin-left: -10%;
 }
 #amount {
+  width: 30px;
+  font-size: 10pt;
   border-radius: 4px;
 }
+center {   /*texts explaining ciphers*/
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  margin: 0 10% 0 10%;
+}
+.left_side {
+  float: left;
+  width: 50%;
+}
+.right_side {
+  float: right;
+  width: 50%;
+}
 
+
+/*************
+   HOMEPAGE
+*************/
 /*Morse Image background*/
 #morseimg {
   background-image: url("morse.jpg");
@@ -47,7 +90,6 @@ textarea {
   background-position: center;
   background-size: cover;
 }
-
 #homepage {
   margin-top: 0;
   padding-top: 80px;
@@ -60,9 +102,9 @@ textarea {
   font-weight: 100;
   text-align:center;
   -webkit-transition: color 2s, font-size 2s;
-     -moz-transition: color 2s, font-size 2s;
-       -o-transition: color 2s, font-size 2s;
-          transition: color 2s, font-size 2s;
+  -moz-transition: color 2s, font-size 2s;
+  -o-transition: color 2s, font-size 2s;
+  transition: color 2s, font-size 2s;
 }
 #author{
   color: #fff;
@@ -106,7 +148,6 @@ COLOUR BLOCKS
 *************/
 .block {
   height: 550px;
-  position: relative;
 }
 #caesarblock {
   background-color: #ee8687;
@@ -122,58 +163,6 @@ COLOUR BLOCKS
 }
 #aboutmeblock {
   background-color: lightgrey;
-}
-
-.sectionTitle {
-  margin-top: 0;
-  padding-top: 80px;
-  text-align: center;
-  font-size: 60px;
-  font-family: "Courier New", Courier, monospace;
-  color:#fff;
-}
-
-label{
-  color: #fff;
-  font-family: "Courier New", Courier, monospace;
-  margin-left: 10%;
-}
-
-.txtBox {
-  margin-left: 10%;
-  height: 70px;
-  width: 80%;
-  font-size: 10pt;
-}
-.btnTranslate {
-  margin-left: 10%;
-}
-
-
-/*Caesar shifts*/
-.letter_shifts {
-  text-align: center;
-  margin-left: -10%;
-}
-#amount {
-  width: 30px;
-  font-size: 10pt;
-}
-
-center {   /*text explaining cipher*/
-  color: #fff;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 16px;
-  margin: 0 10% 0 10%;
-}
-
-.left_side {
-  float: left;
-  width: 50%;
-}
-.right_side {
-  float: right;
-  width: 50%;
 }
 
 #sound {
@@ -218,10 +207,6 @@ p { /*text about me*/
 }
 
 .footer {
-  overflow: hidden;
-  position: absolute;
-  bottom: 20px;
   color: grey;
-  width: 100%;
   text-align: center;
 }
