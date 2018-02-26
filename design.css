@@ -133,13 +133,13 @@ Navigation Bar
   font-family: 'Amatic SC';
   font-size: 25px;
   float: left;
+  width: 20%;
 }
 #nav a {
-  padding: 14px 40px;
+  padding: 19px 25px;
   text-decoration: none;
   display: inline-block;
   color: grey;
-  margin: 5px 0 5px 0;
 }
 #nav a:hover{
   background-color: #75A8B3;
