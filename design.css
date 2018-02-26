@@ -13,6 +13,9 @@ Common things
   font-family: "Courier New", Courier, monospace;
   color:#fff;
 }
+.sectionTitle a{
+  color: white;
+}
 label{ /*All labels*/
   color: #fff;
   font-family: "Courier New", Courier, monospace;
