@@ -174,11 +174,6 @@ COLOUR BLOCKS
   margin-left: 5%;
 }
 
-#sound {
-  width: 20px;
-  padding-left: 20px;
-}
-
 #morseMessage {
   padding: 3px;
   display: none;

@@ -10,7 +10,7 @@
     <div id="morseimg">
       <div id="homepage">
         <h1 id="mainTitle">div{id="homepage"}, h1 font Amatic SC</h1>
-        <h6 id="author">div:id="homepage", h6; Amatic SC; 80px padding-top;
+        <h6 id="author">div{id="homepage"}, h6{id="author"}
           Image is morse code, 466 px, fixed position in the center
         </h6>
       </div>
@@ -21,11 +21,11 @@
     <!--NAVIGATION-->
     <div id="nav">
       <ul>
-        <li><a>div:id="nav"</a></li>
+        <li><a>div{id="nav"}</a></li>
         <li><a>navigation bar</a></li>
         <li><a>70px height</a></li>
         <li><a>#BFD8D2, font 25px</a></li>
-        <li><a>Change to #75A8B3 on hover</a></li>
+        <li><a>Change colour on hover</a></li>
       </ul>
     </div>
 
@@ -34,23 +34,23 @@
 
     <!--CAESAR CIPHER-->
     <div id="caesarblock" class="block">
-      <h1 class="sectionTitle">class:"sectionTitle", h1; background colour: #ee8687</h1>
+      <h1 class="sectionTitle">h1{class="sectionTitle"}; background colour: #ee8687</h1>
       <center>tag:center. All colour blocks are 550px high. Font: Courier New</center>
       <br><br>
       <div class="left_side">
         <label>class="left_side"</label><br>
-        <label>Label: all the same format in label{} in CSS</label> <br>
+        <label>Label: all the same format in CSS label{}</label> <br>
         <textarea id="txtBoxPlainText" type="text">Textarea id="txtBoxPlainText". Every textarea has a different id (cipher name + PlainText or CipherText), but they are all have the same appearance in textarea{} in the CSS file</textarea>
         <br><br>
-        <button id="btnPink" type="button">Encipher</button>
+        <button id="btnPink" type="button">button(encipher)</button>
         <br><br>
       </div>
       <div class="right_side">
         <label>class="right_side"</label><br>
         <label>Another label</label><br>
-        <textarea id="txtBoxCipher">The 'encipher' and 'decipher' buttons have the same formatting as the textareas but with different colours. They change background and font colour when we hover over them.</textarea>
+        <textarea id="txtBoxCipher">The 'encipher' and 'decipher' buttons have the same formatting as the textareas but with different colours. They change background and font colour when we hover over them. In CSS they are defined in button{} and button:hover{}</textarea>
         <br><br>
-        <button id="btnPink1" type="button">Decipher</button>
+        <button id="btnPink1" type="button">button(decipher)</button>
       </div>
     </div>
 
@@ -59,7 +59,9 @@
     <!--MORSE CIPHER -->
     <div id="morseblock" height="250px">
       <h1 class="sectionTitle">class:"sectionTitle", background-color: #52658f</h1>
-      <center>This image <input type="image" id="sound" src="sound.png"/> is used to make the morse sound of the enciphered message. It has a width of 20px and padding left of 20px.</center>
+      <center>This image <input type="image" class="voice" src="speaker.png"/> is used to make the sound (in morse) or read the enciphered message. It is an input{type="image" class="voice"}. It has a width of 20px and padding left of 20px.</center>
+      <center>This image <input type="image" class="voice" src="copy2.png"/> is used to copy the message. It is an input{type="image" class="voice"} too so it also has a width of 20px and padding left of 20px, just like the above image.</center>
+
       <br>
       </div>
     </div>
@@ -71,7 +73,7 @@
     <div id="binaryblock" class="block">
       <h1 class="sectionTitle">class:"sectionTitle", background-colour: #89B375</h1>
       <center>Basic block composition:</center><br>
-      <center><img src="tags.png"></center><br>
+      <center><img src="tags.png" height="200px"></center><br>
       <br><br>
     </div>
 
@@ -87,15 +89,15 @@
 
     <!--ABOUT ME-->
     <div id="aboutmeblock" class="block">
-      <h1 class="sectionTitle">class:"sectionTitle", background-colour: lightgrey </h1>
-      <center>This images are used as links to my social media pages. They have 60px sides padding, aligned at the center, width of 20% and inline-block display</center>
+      <h1 class="sectionTitle">class:"sectionTitle", background-colour: lightgrey.</h1>
+      <center>This images are used as links to my social media pages. They are inside a div{class="social_media"} and they are all img tags. CSS: .social_media</center>
       <div class="social_media">
         <img src="facebook2.png">
         <img src="insta.png">
         <img src="linkedin2.png">
       </div>
       <div class="footer">
-        <h6>Footer is grey, aligned in the center.</h6>
+        <h6>div{class="footer"}, h6 tags find in CSS as .footer{}</h6>
       </div>
 
     </div>
