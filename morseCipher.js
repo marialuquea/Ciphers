@@ -10,8 +10,9 @@ function morseCipher(){
 
   for (var i = 0; i < word.length; i++) {
 
+    //search for the code in the array
     word[i] = morse[word[i]];
-    output += word[i] + ' ';
+    output += word[i] + '/';
 
   }
 

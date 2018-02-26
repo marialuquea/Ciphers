@@ -7,10 +7,10 @@ function morseDecipher(){
   //words are separated by 5 spaces, so split words
   //to each word apply this function
   text.split("     ").map(function (word) {
-    
-    //separate letter in each word by a space
+
+    //separate letter in each word where the / is
     //apply function to each letter
-    word.split(" ").map(function (letter){
+    word.split("/").map(function (letter){
 
         output += alphabet[letter];
 
