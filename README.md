@@ -1,6 +1,6 @@
 # Ciphers webpage
 
-##Web Technologies 2018 Coursework 1 
+## Web Technologies 2018 Coursework 1 
 
 ### Edinburgh Napier University
 
