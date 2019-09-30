@@ -1,4 +1,4 @@
-# Ciphers webpage :)
+# Ciphers webpage
 
 ## Web Technologies 2018 Coursework 1 
 
